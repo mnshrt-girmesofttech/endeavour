@@ -1,0 +1,18 @@
+.clients-container {
+  h3 {
+    padding: 50px 70px;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+
+    .grid-item {
+      background-color: rgba(255, 255, 255, 0.8);
+      border: none;
+      text-align: center;
+    }
+  }
+}

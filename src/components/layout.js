@@ -3,13 +3,21 @@
  * with Gatsby's useStaticQuery component
  *
  * See: https://www.gatsbyjs.com/docs/use-static-query/
+ * 
+ * 
+ * backgroundImage: `url(${workshop})`, backgroundRepeat: "no-repeat",
+        backgroundAttachment: "fixed", backgroundSize: "100% 100%"
  */
 
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-
 import Header from "./header"
+import About from "./about.component/about.component";
+import Showcase from "./showcase.component/showcase.component"
+import Services from "./services.component/services.component"
+import Contact from "./contact.component/contact.component"
+import Clients from "./clients.component/clients.component"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -25,12 +33,17 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+      <Header siteTitle={data.site.siteMetadata?.title || `Endeavour Enterprises`} />
+      <Showcase />
+      <About />
+      <Services />
+      <Clients />
+      <Contact />
       <div
         style={{
           margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
+          maxWidth: `960px`,
+          padding: ` 1.0875rem 1.45rem 0`,
         }}
       >
         <main>{children}</main>
@@ -39,9 +52,9 @@ const Layout = ({ children }) => {
             marginTop: `2rem`,
           }}
         >
-          © {new Date().getFullYear()}, Built with
+          Copyright ©
           {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
+          <span>Endeavour Enterprises. All Rights Reserved</span>
         </footer>
       </div>
     </>

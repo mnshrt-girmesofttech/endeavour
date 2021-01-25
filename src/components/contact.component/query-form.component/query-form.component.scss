@@ -1,0 +1,46 @@
+.query-form {
+  input {
+    border-radius: 2px;
+    border: none;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    height: 50px;
+    width: 250px;
+    padding: 5px;
+  }
+
+  textArea {
+    border-radius: 2px;
+    border: none;
+    margin: 10px 0 15px 0;
+    font-size: 1rem;
+    padding: 5px;
+  }
+  button {
+    color: white;
+    background-color: black;
+    border: none;
+    margin: 30px;
+    width: 125px;
+    height: 50px;
+  }
+
+  .box-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .box-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .box-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
