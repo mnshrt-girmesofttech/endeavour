@@ -1,0 +1,20 @@
+.service-list-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-bottom: 20px;
+
+  .service-box {
+    border-radius: 5px;
+    flex: 1 1 0;
+    border: none;
+    margin-right: 20px;
+    color: gray;
+    background-color: white;
+
+    p {
+      padding: 10px;
+    }
+  }
+}

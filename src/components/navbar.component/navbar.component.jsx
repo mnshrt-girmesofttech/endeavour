@@ -6,6 +6,7 @@ import "./navbar.component.scss"
 
 function Navbar({ siteTitle }) {
   const [scrolled, setScrolled] = useState(false)
+  const [menuActive, setMenuActive] = useState(false)
   let navbarClasses = ["navbar"]
 
   const handleScroll = () => {
@@ -17,48 +18,34 @@ function Navbar({ siteTitle }) {
     }
   }
 
+  const burgerClickHandler = () => {
+    setMenuActive(!menuActive)
+  }
   useEffect(() => {
     window.addEventListener("scroll", handleScroll)
   })
   if (scrolled) {
     navbarClasses.push("scrolled")
   }
+  if (menuActive) {
+    navbarClasses.push("cross-activate")
+  }
   return (
     <div className={navbarClasses.join(" ")}>
-      <div style={{ display: "flex", height: "100%" }}>
-        <div className="logo">
-          <img src={logo} alt="Endeavour Enterprises Logo" />
-        </div>
-        <div style={{ padding: "25px 0 0 25px" }}>
-          <h1 style={{ margin: 0 }}>
-            <Link
-              to="/"
-              style={{
-                color: `white`,
-                textDecoration: `none`,
-              }}
-            >
-              {siteTitle}
-            </Link>
-          </h1>
-        </div>
+      <div className="logo">
+        <img src={logo} alt="Endeavour Enterprises Logo" />
       </div>
-      {/* <nav className="navigation">
-              <div style={{ padding: "25px 0 0 25px" }}>
-          <h1 style={{ margin: 0 }}>
-            <Link
-              to="/"
-              style={{
-                color: `white`,
-                textDecoration: `none`,
-              }}
-            >
-              {siteTitle}
-            </Link>
-          </h1>
-        </div>
-         </nav> */}
-      <Menu />
+      <div className="logo-container">
+        <h1>
+          <Link to="/">{siteTitle}</Link>
+        </h1>
+      </div>
+      <Menu active={menuActive} menuScrolled={scrolled} />
+      <div className="burger" onClick={() => burgerClickHandler()}>
+        <div className="div1"></div>
+        <div className="div2"></div>
+        <div className="div3"></div>
+      </div>
     </div>
   )
 }

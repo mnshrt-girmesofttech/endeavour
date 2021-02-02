@@ -6,11 +6,16 @@
   align-items: center;
   justify-content: center;
   h1 {
+    font-family: "Roboto", sans-serif;
     position: relative;
-    color: #ffffff;
-    font-size: 1rem;
-    line-height: 0.9;
-    text-align: center;
+    color: white;
+    font-size: 2rem;
+    line-height: 7em;
+    text-align: left;
+    line-height: 100px;
+    margin: 0 0 0 0;
+    padding: 0;
+    // mix-blend-mode: overlay;
   }
 }
 
@@ -23,5 +28,4 @@
   right: 0px;
   bottom: 0px;
   left: 0px;
-  opacity: 0.8;
 }
