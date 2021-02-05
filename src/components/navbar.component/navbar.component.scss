@@ -94,11 +94,14 @@
   }
   .cross-activate {
     .burger {
-      .div1 {
-        transform: translate(-6, 5);
+      .line-1 {
+        transform: rotate(-45deg) translate(-5px, 4px);
       }
-      .div2 {
-        display: hidden;
+      .line-2 {
+        opacity: 0;
+      }
+      .line-3 {
+        transform: rotate(45deg) translate(-5px, -4px);
       }
     }
   }

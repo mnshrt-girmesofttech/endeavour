@@ -1,0 +1,36 @@
+.photos-container {
+  display: flex;
+  flex-direction: column;
+
+  .photos-1 {
+    display: flex;
+  }
+  .photos-2 {
+    display: flex;
+  }
+  .photos {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .photos-container {
+    .photos-1 {
+      flex-direction: column;
+    }
+    .photos-2 {
+      flex-direction: column;
+    }
+  }
+}
+@media (max-width: 400px) {
+  #photos {
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1;
+  }
+}

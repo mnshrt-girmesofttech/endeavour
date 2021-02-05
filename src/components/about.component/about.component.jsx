@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import machineMill from "../../images/machine-mill-1.jpeg"
+import AboutUs from "../../images/about-us.jpeg"
 
 import "./about.component.scss"
 
@@ -9,7 +9,7 @@ export default function About() {
     <div className="about-container">
       <div className="list-container">
         <div className="image-container">
-          <img src={machineMill} alt="about us" />
+          <img src={AboutUs} alt="about us" />
         </div>
         <div class="about-details-container">
           <div className="about-us">

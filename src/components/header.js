@@ -1,18 +1,18 @@
 import PropTypes from "prop-types"
 import React from "react"
 import Navbar from "../components/navbar.component/navbar.component";
-
+import "./header.scss";
 const Header = ({ siteTitle }) => (
   <header
     style={{
       background: `black`,
     }}
+    id="top"
   >
-    <div style={{ background: "#faf4df", height: "50px" }}>
-      <ul style={{ display: "flex", justifyContent: "flex-end", alignItems: "center", paddingTop: "12.5px", listStyle: "none" }}>
-        <li style={{ marginRight: "30px" }}>9225505783</li>
-        <li style={{ marginRight: "10px" }}>Endeavourenterprises2018@gmail.com &nbsp; &nbsp;endeavourent@rediffmail.com</li>
-      </ul>
+    <div className="contacts-container">
+      <div className="contact-box">9225505783</div>
+      <div className="contact-box">Endeavourenterprises2018@gmail.com</div>
+      <div className="contact-box">endeavourent@rediffmail.com</div>
     </div>
     {/* <div
       style={{

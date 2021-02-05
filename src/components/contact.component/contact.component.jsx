@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 import QueryForm from "./query-form.component/query-form.component"
 import "./contact.component.scss"
 
@@ -40,7 +41,9 @@ export default function Contact() {
                 <strong>Email:</strong> Endeavourenterprises2018@gmail.com,
                 endeavourent@rediffmail.com
               </li>
-              <button>TOP</button>
+              <AnchorLink to="#top" title="top">
+                <button style={{ color: "black" }}>TOP</button>
+              </AnchorLink>
             </ul>
           </div>
         </div>

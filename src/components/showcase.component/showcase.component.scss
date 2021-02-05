@@ -5,6 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
   h1 {
     font-family: "Roboto", sans-serif;
     position: relative;
@@ -14,8 +15,8 @@
     text-align: left;
     line-height: 100px;
     margin: 0 0 0 0;
-    padding: 0;
-    // mix-blend-mode: overlay;
+    padding: 50px;
+    //mix-blend-mode: overlay;
   }
 }
 
@@ -28,4 +29,34 @@
   right: 0px;
   bottom: 0px;
   left: 0px;
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 1200px) {
+  .hero {
+    h1 {
+      font-size: 1.5rem;
+      line-height: 2em;
+      padding: 10px;
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  .hero {
+    h1 {
+      font-size: 1.2rem;
+      line-height: 1.5em;
+      padding: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hero {
+    h1 {
+      font-size: 1.2rem;
+      line-height: 1.2em;
+      padding: 10px;
+    }
+  }
 }

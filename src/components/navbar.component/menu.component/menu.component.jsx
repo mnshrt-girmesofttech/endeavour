@@ -1,5 +1,6 @@
 import { Link } from "gatsby"
 import React from "react"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 import "./menu.component.scss"
 const MenuItems = [
   {
@@ -18,10 +19,6 @@ const MenuItems = [
     linkName: "Infrastructure",
     linkPath: "/infrastructure",
   },
-  {
-    linkName: "Contact Us",
-    linkPath: "/",
-  },
 ]
 const Menu = ({ active, menuScrolled }) => (
   <div
@@ -35,6 +32,9 @@ const Menu = ({ active, menuScrolled }) => (
           <Link to={menuItem.linkPath}>{menuItem.linkName}</Link>
         </li>
       ))}
+      <li>
+        <AnchorLink to="#contact-form">Contact Us</AnchorLink>
+      </li>
     </ul>
   </div>
 )

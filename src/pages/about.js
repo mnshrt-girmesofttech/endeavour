@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, withAssetPrefix } from "gatsby"
+import AboutUs from '../images/about-us.jpeg'
 import Header from "../components/header"
 import Contact from "../components/contact.component/contact.component"
 import './about.scss';
@@ -15,15 +15,24 @@ function about() {
                     margin: `0 auto`,
                     padding: ` 1.0875rem 1.45rem 0`,
                 }}
+                className="main-container"
             >
                 <h1>About Us</h1>
-                <p>In the year 2018 “Endeavour Enterprises” has established as partnership  firm in dealing machine tool. Our range of work will satisfy your all needs.
-                We can proudly call ourselves as one of the leading Manufacturers &  Contractors providing Efficient & Specialized milling and turning work,  reconditioning, retrofitting, scraping, and grinding of heavy job. Endeavour Enterprises has made an investment not only in advance manufacturing  technology, but also in the high levels of technical expertise, essential to  ensure that both aspects of the industry are combined, “hand in hand” offer  you the highly competitive service you demand.
-                </p>
+                <div className="about-container">
+                    <div className="about-container-1">
+                        <img src={AboutUs} alt="about us" />
+                    </div>
+                    <div className="about-container-2">
+                        <p>In the year 2018 “Endeavour Enterprises” has established as partnership  firm in dealing machine tool. Our range of work will satisfy your all needs.
+                        We can proudly call ourselves as one of the leading Manufacturers &  Contractors providing Efficient & Specialized milling and turning work,  reconditioning, retrofitting, scraping, and grinding of heavy job. Endeavour Enterprises has made an investment not only in advance manufacturing  technology, but also in the high levels of technical expertise, essential to  ensure that both aspects of the industry are combined, “hand in hand” offer  you the highly competitive service you demand.
+                        </p>
+                    </div>
+                </div>
+
 
 
                 <h2>Why choose us?</h2>
-                <div className="main-container">
+                <div className="choose-container">
                     <div className="container-1">
                         <div className="box"><h3>Technical Expertise</h3><p>The company has earned an excellence in engineering industry as a reliable retrofitter and fabricator of machine tools. </p></div>
                         <div className="box"><h3>Quality</h3><p>Establish and maintain highest standards of professional performance and ethical practice. We have given importance to not only advanced technology but also technical excellence. It is  useful to provide the excellent solution with best accuracy.</p></div>

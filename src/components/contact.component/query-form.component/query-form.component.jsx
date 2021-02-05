@@ -22,7 +22,7 @@ export default function QueryForm() {
             <input type="email" placeholder="Email id" required />
           </div>
         </div>
-        <div>
+        <div className="box-4">
           <textarea
             name="addedText"
             rows="4"

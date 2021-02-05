@@ -1,0 +1,17 @@
+.contacts-container {
+  background: #faf4df;
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  .contact-box {
+    padding-right: 10px;
+  }
+}
+@media screen and (max-width: 890px) {
+  .contacts-container {
+    height: fit-content;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}

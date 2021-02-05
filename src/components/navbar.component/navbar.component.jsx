@@ -42,9 +42,9 @@ function Navbar({ siteTitle }) {
       </div>
       <Menu active={menuActive} menuScrolled={scrolled} />
       <div className="burger" onClick={() => burgerClickHandler()}>
-        <div className="div1"></div>
-        <div className="div2"></div>
-        <div className="div3"></div>
+        <div className="line-1"></div>
+        <div className="line-2"></div>
+        <div className="line-3"></div>
       </div>
     </div>
   )
