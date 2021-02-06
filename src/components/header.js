@@ -1,7 +1,10 @@
 import PropTypes from "prop-types"
 import React from "react"
+import { Link } from "gatsby";
 import Navbar from "../components/navbar.component/navbar.component";
 import "./header.scss";
+import IsoLogo from '../images/iso-logo.png'
+import GatsbyImage from "gatsby-image";
 const Header = ({ siteTitle }) => (
   <header
     style={{
@@ -9,10 +12,17 @@ const Header = ({ siteTitle }) => (
     }}
     id="top"
   >
+
     <div className="contacts-container">
-      <div className="contact-box">9225505783</div>
-      <div className="contact-box">Endeavourenterprises2018@gmail.com</div>
-      <div className="contact-box">endeavourent@rediffmail.com</div>
+      <div className="iso-container">
+        <Link to="/iso"><img src={IsoLogo} alt="iso-logo" /></Link>
+      </div>
+      <div className="contact-box-container">
+        <div className="contact-box">+91-9225505783</div>
+        <div className="contact-box">Endeavourenterprises2018@gmail.com</div>
+        <div className="contact-box">endeavourent@rediffmail.com</div>
+      </div>
+
     </div>
     {/* <div
       style={{

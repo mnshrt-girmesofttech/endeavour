@@ -24,10 +24,10 @@ export default function QueryForm() {
         </div>
         <div className="box-4">
           <textarea
-            name="addedText"
+            name="message"
             rows="4"
             cols="28"
-            placeholder="Add Text"
+            placeholder="Message"
             required
           />
         </div>

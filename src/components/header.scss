@@ -2,16 +2,29 @@
   background: #faf4df;
   height: 50px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
-  .contact-box {
-    padding-right: 10px;
+  .iso-container {
+    height: 50px;
+    cursor: pointer;
+    img {
+      height: 100%;
+    }
+  }
+  .contact-box-container {
+    display: flex;
+    .contact-box {
+      padding-right: 10px;
+    }
   }
 }
 @media screen and (max-width: 890px) {
   .contacts-container {
     height: fit-content;
-    flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
+    padding: 10px;
+    .contact-box-container {
+      flex-direction: column;
+    }
   }
 }
