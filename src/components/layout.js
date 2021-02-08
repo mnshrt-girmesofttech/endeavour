@@ -12,8 +12,6 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import logo from '../images/logo.png'
-import Helmet from 'react-helmet'
 import Header from "./header"
 import About from "./about.component/about.component";
 import Showcase from "./showcase.component/showcase.component"
@@ -35,9 +33,6 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Helmet>
-        <link rel="icon" href={logo} />
-      </Helmet>
       <Header siteTitle={data.site.siteMetadata?.title || `Endeavour Enterprises`} />
       <Showcase />
       <About />

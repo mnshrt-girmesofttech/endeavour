@@ -8,9 +8,6 @@ export default function About() {
   return (
     <div className="about-container">
       <div className="list-container">
-        <div className="image-container">
-          <img src={AboutUs} alt="about us" />
-        </div>
         <div class="about-details-container">
           <div className="about-us">
             <h3>About Us</h3>

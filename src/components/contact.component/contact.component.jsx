@@ -41,9 +41,12 @@ export default function Contact() {
                 <strong>Email:</strong> Endeavourenterprises2018@gmail.com,
                 endeavourent@rediffmail.com
               </li>
-              <AnchorLink to="#top" title="top">
-                <button style={{ color: "black" }}>TOP</button>
-              </AnchorLink>
+              <li>
+                {" "}
+                <AnchorLink to="#top" title="top">
+                  <button style={{ color: "black" }}>TOP</button>
+                </AnchorLink>
+              </li>
             </ul>
           </div>
         </div>

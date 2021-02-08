@@ -26,26 +26,40 @@ function services() {
                     <div className="service-box">
                         <img src={service1} alt="imported machines substitutes" />
                         <p>
-                            Design and manufacturing import substitute components for imported
-                            machines.
-          </p>
+                            <ul>
+                                <li>Heavy Duty CNC Machining</li>
+                                <li>Heavy Duty Job works</li>
+                            </ul>
+                        </p>
                     </div>
                     <div className="service-box">
                         <img src={service2} alt="spare parts supply" />
-                        <p>We supply all type of machine spare parts.</p>
+                        <p><ul>
+                            <li>Slide way Grinding </li>
+                            <li>Surface Grinding work  </li>
+                        </ul></p>
                     </div>
                     <div className="service-box">
                         <img
                             src={service3}
                             alt="machines and projects installation"
                         />
-                        <p>Installation and commissioning of all type machines & projects.</p>
+                        <p>Specialist in:
+                            <ul>
+                                <li>HBM machine</li>
+                                <li>Plano milling machine</li>
+                                <li>SPM machine</li>
+                                <li>VMC machine</li>
+                                <li>HMC machine</li>
+                            </ul>
+                        </p>
                     </div>
                     <div className="service-box">
                         <img src={service4} alt="welding and fabrication" />
-                        <p>
-                            Welding & fabrication with materials to larger size in the plates 40
-                            thk in the ARC welding & gas Welding
+                        <p><ul>
+                            <li>VMC, CNC machine Reconditioning and Retrofitting.</li>
+                            <li>Turn Key Industrial Projects.</li>
+                        </ul>
                         </p>
                     </div>
                 </div>

@@ -1,4 +1,5 @@
 .about-container {
+  font-family: georgia, serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -104,12 +105,17 @@
   }
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 500px) {
   .about-container {
+    padding: 10px;
     .list-container {
       .about-details-container {
+        margin: 10px;
         align-items: center;
         justify-content: center;
+        .about-us {
+          padding-left: 0;
+        }
         .box-container {
           flex-direction: column;
 
@@ -117,6 +123,23 @@
             border-radius: 40px;
             width: 70%;
             height: 50%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .about-container {
+    .list-container {
+      .about-details-container {
+        .box-container {
+          .box {
+            margin-top: 10px;
+            p {
+              padding: 10px;
+            }
           }
         }
       }

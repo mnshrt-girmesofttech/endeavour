@@ -11,6 +11,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    font-family: georgia, serif;
 
     .service-box {
       border-radius: 5px;
@@ -18,17 +19,17 @@
       height: 400px;
       border: none;
       margin-right: 20px;
-      color: gray;
+
       background-color: white;
       transition: all 0.2s ease-in-out;
       cursor: pointer;
       a {
         text-decoration: none;
-        color: black;
+        color: gray;
       }
       p {
         padding: 10px;
-        font-size: 0.8rem;
+        font-size: 1rem;
       }
     }
     .service-box:hover {
@@ -43,15 +44,39 @@
     }
   }
 }
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 990px) {
   .services-container {
     .service-list-container {
       flex-direction: column;
       .service-box {
-        width: 300px;
+        width: 400px;
+        height: 400px;
         p {
           padding: 5px;
-          font-size: 0.8rem;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .services-container {
+    padding: 20px;
+    margin-right: 0;
+    .service-list-container {
+      width: 100%;
+      .service-box {
+        margin: 25px 0;
+        width: 60%;
+        height: fit-content;
+        img {
+          height: 60%;
+        }
+        p {
+          text-align: center;
+          width: 100%;
+          padding: 5px;
+          font-size: 0.9rem;
         }
       }
     }

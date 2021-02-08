@@ -69,6 +69,7 @@
 
 @media screen and (max-width: 910px) {
   .contact-main-container {
+    height: fit-content;
     padding: 25px;
     h3 {
       cursor: pointer;
@@ -91,9 +92,16 @@
       .address-ql-container {
         margin-top: 120px;
         flex-direction: column;
-        .contacts-box,
+        height: fit-content;
+        .contacts-box {
+          height: fit-content;
+        }
         .quick-links-box {
-          width: 90%;
+          width: 100%;
+          button {
+            padding: 0;
+            margin: 5px 0 0 0px;
+          }
         }
       }
     }

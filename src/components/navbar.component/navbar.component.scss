@@ -106,3 +106,35 @@
     }
   }
 }
+@media screen and (max-width: 500px) {
+  .navbar {
+    .logo {
+      display: none;
+    }
+    .logo-container {
+      width: 80%;
+      h1 {
+        margin-top: 0;
+        a {
+          font-size: 1.2rem;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 350px) {
+  .navbar {
+    .logo-container {
+      width: 90%;
+      h1 {
+        a {
+          font-size: 1rem;
+        }
+      }
+    }
+    .burger {
+      padding: 10px;
+    }
+  }
+}

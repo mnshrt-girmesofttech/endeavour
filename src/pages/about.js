@@ -42,19 +42,19 @@ function about() {
                         <div className="box"><h3>Ability</h3><p>We have CAD (DELCAM) Network facilities with VMC and surface grinding. We having the ability of the more traditional based machining methods also having demands in now days.</p></div>
                     </div>
                 </div>
-            </div>
 
-            <Contact />
-            <footer
-                style={{
-                    marginTop: `2rem`,
-                }}
-            >
-                Copyright ©
+
+                <Contact />
+                <footer
+                    style={{
+                        marginTop: `2rem`,
+                    }}
+                >
+                    Copyright ©
         {` `}
-                <span>Endeavour Enterprises. All Rights Reserved</span>
-            </footer>
-
+                    <span>Endeavour Enterprises. All Rights Reserved</span>
+                </footer>
+            </div>
         </>
 
     )

@@ -56,7 +56,7 @@
     }
   }
   .active {
-    top: 90px;
+    top: 190px;
     right: -1%;
     ul {
       justify-content: space-evenly;
@@ -71,5 +71,11 @@
   }
   .menu-scrolled {
     top: 40px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .active {
+    top: 180px;
+    right: -1%;
   }
 }

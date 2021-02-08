@@ -1,5 +1,6 @@
 .main-container {
   background-color: wheat;
+
   .about-container {
     padding: 0;
     display: flex;
@@ -69,6 +70,9 @@
   }
 }
 @media screen and (max-width: 890px) {
+  h1 {
+    font-size: 1.5rem;
+  }
   .container-1 {
     flex-direction: column;
   }

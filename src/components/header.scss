@@ -28,3 +28,16 @@
     }
   }
 }
+@media screen and (max-width: 890px) {
+  .contacts-container {
+    font-size: 0.9rem;
+    flex-direction: column;
+    align-items: flex-end;
+    .iso-container {
+      width: 30%;
+    }
+    .contact-box-container {
+      align-items: flex-end;
+    }
+  }
+}
